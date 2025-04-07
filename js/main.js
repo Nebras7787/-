@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
         });
     });
+
     
     // تأثير التمرير للهيدر
     window.addEventListener('scroll', function() {
@@ -25,14 +26,27 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (window.scrollY > 100) {
             header.classList.add('scrolled');
-            backToTop.classList.add('active');
+            backToTop.classList.add('active'); 
+
         } else {
             header.classList.remove('scrolled');
             backToTop.classList.remove('active');
         }
     });
+     
+    function toggleServices() {
+        var moreServices = document.getElementById("more-services");
+        var btn = document.querySelector("btn primary-btn more");
     
-    // عداد الإحصائيات
+        moreServices.classList.toggle("hidden");
+    
+        if (moreServices.classList.contains("hidden")) {
+            btn.innerText = "h";
+        } else {
+            btn.innerText = "إخفاء الخدمات";
+        }
+    }
+    // عداد الإحصائيات 
     const counters = document.querySelectorAll('.counter');
     const speed = 200;
     
