@@ -797,37 +797,9 @@ img {
     text-align: center;
 }
 
-/* قسم فريق العمل */
 
 
-/* .social-links {
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(135deg, rgba(26, 82, 118, 0.9), rgba(211, 84, 0, 0.9));
-    padding: 15px;
-    transition: bottom 0.3s ease;
-} */
 
-.team-member:hover .social-links {
-    bottom: 0;
-}
-
-/* .social-links a {
-    color: var(--white-color);
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-} */
 
 .social-links a:hover {
     background-color: var(--white-color);
