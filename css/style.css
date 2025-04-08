@@ -798,46 +798,7 @@ img {
 }
 
 /* قسم فريق العمل */
-.team {
-    padding: 100px 0;
-    background-color: var(--white-color);
-}
 
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.team-member {
-    background-color: var(--white-color);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: translateY(-10px);
-}
-
-.member-image {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-}
-
-.member-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.team-member:hover .member-image img {
-    transform: scale(1.1);
-}
 
 /* .social-links {
     position: absolute;
@@ -899,38 +860,11 @@ img {
 }
 
 /* قسم الخريطة */
-.map-section {
-    padding: 80px 0;
-    background-color: var(--light-gray);
-}
 
-.map-container {
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
 
-.map-placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-    color: var(--gray-color);
-}
 
-.map-placeholder i {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
+
+
 
 /* قسم طلب عرض سعر */
 .quote {
@@ -1381,7 +1315,7 @@ img {
 }
 @media (min-width: 1050px) { 
 :root {
-    --gap: 100px; /* تغيير قيمة gap على الشاشات في هذا النطاق */
+    --gap: 200px; /* تغيير قيمة gap على الشاشات في هذا النطاق */
 } }
 /* التكيف مع الشاشات الصغيرة */
 @media (max-width: 1200px) {
