@@ -797,6 +797,7 @@ img {
     text-align: center;
 }
 
+<<<<<<< HEAD
 /* قسم فريق العمل */
 .team {
     padding: 100px 0;
@@ -867,6 +868,11 @@ img {
     background-color: rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
 } */
+=======
+
+
+
+>>>>>>> edit/1
 
 .social-links a:hover {
     background-color: var(--white-color);
@@ -899,6 +905,7 @@ img {
 }
 
 /* قسم الخريطة */
+<<<<<<< HEAD
 .map-section {
     padding: 80px 0;
     background-color: var(--light-gray);
@@ -931,6 +938,13 @@ img {
     margin-bottom: 15px;
     color: var(--primary-color);
 }
+=======
+
+
+
+
+
+>>>>>>> edit/1
 
 /* قسم طلب عرض سعر */
 .quote {
@@ -1381,7 +1395,11 @@ img {
 }
 @media (min-width: 1050px) { 
 :root {
+<<<<<<< HEAD
     --gap: 100px; /* تغيير قيمة gap على الشاشات في هذا النطاق */
+=======
+    --gap: 200px; /* تغيير قيمة gap على الشاشات في هذا النطاق */
+>>>>>>> edit/1
 } }
 /* التكيف مع الشاشات الصغيرة */
 @media (max-width: 1200px) {
