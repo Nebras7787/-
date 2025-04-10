@@ -1,0 +1,187 @@
+<style>
+    :root {
+        --primary-color: #1a5276;
+        --primary-light: #2980b9;
+        --secondary-color: #d35400;
+        --secondary-light: #e67e22;
+        --dark-color: #17202a;
+        --gray-color: #566573;
+        --light-gray: #f2f3f4;
+        --white-color: #ffffff;
+        --black-color: #000000;
+        --gap: 1px;
+    }
+    
+    .supervisor-card {
+        background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+        color: var(--white-color);
+        padding: 2.5rem;
+        border-radius: 15px;
+        margin-top: 2rem;
+        display: flex;
+        gap: 2.5rem;
+        align-items: flex-start;
+        text-align: right;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        border: 1px solid rgba(255,255,255,0.1);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .supervisor-card::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        z-index: 0;
+    }
+    
+    .supervisor-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 15px;
+        object-fit: cover;
+        border: 3px solid var(--secondary-light);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        position: relative;
+        z-index: 1;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .supervisor-image:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(210, 84, 0, 0.4);
+    }
+    
+    .supervisor-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .supervisor-card h3 {
+        font-size: 2rem;
+        margin: 0;
+        color: var(--white-color);
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+    
+    .supervisor-card .title {
+        color: var(--secondary-light);
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .supervisor-card .title::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        right: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--secondary-light);
+        border-radius: 3px;
+    }
+    
+    .supervisor-card p {
+        margin: 0;
+        line-height: 1.8;
+        color: rgba(255,255,255,0.9);
+        font-size: 1.1rem;
+    }
+    
+    .qualifications {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .qualification {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: rgba(23, 32, 42, 0.7);
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+        border-left: 4px solid var(--secondary-light);
+        backdrop-filter: blur(5px);
+    }
+    
+    .qualification:hover {
+        background: rgba(41, 128, 185, 0.2);
+        transform: translateX(-10px);
+        box-shadow: 5px 0 15px rgba(210, 84, 0, 0.3);
+    }
+    
+    .qualification i {
+        color: var(--secondary-light);
+        font-size: 1.4rem;
+        min-width: 25px;
+    }
+    
+    .qualification span {
+        font-size: 1.1rem;
+    }
+    
+    @media (max-width: 768px) {
+        .supervisor-card {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .supervisor-card .title::after {
+            right: 50%;
+            transform: translateX(50%);
+        }
+        
+        .qualification {
+            justify-content: flex-start;
+            border-left: none;
+            border-top: 4px solid var(--secondary-light);
+            padding: 1rem;
+        }
+        
+        .qualification:hover {
+            transform: translateY(-5px);
+            translateX: 0;
+        }
+    }
+    </style>
+    
+    <div class="supervisor-card">
+        <img src="images/supervisor.jpg" alt="المهندس طحنون" class="supervisor-image"> 
+        <div class="supervisor-info">
+            <h3>م/ طحنون</h3>
+            <p class="title">المشرف الهندسي للمؤسسة</p>
+            <p>خبرة أكثر من 15 عاماً في مجال الإنشاءات والإشراف على المشاريع الكبرى في المملكة العربية السعودية</p>
+            <div class="qualifications">
+                <div class="qualification">
+                    <i class="fas fa-certificate"></i>
+                    <span>خبرة بالهندسة المدنية لأكثر من 15 سنة</span>
+                </div>
+                <div class="qualification">
+                    <i class="fas fa-award"></i>
+                    <span>مشرف معتمد من وزارة الإسكان</span>
+                </div>
+                <div class="qualification">
+                    <i class="fas fa-medal"></i>
+                    <span>حاصل على جائزة أفضل مشرف هندسي 2022</span>
+                </div>
+            </div>
+        </div>
+    </div>
